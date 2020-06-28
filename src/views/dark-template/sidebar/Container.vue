@@ -7,10 +7,10 @@
       <avatar />
       <div class="text-sm-center mb-4 mt-3">
         <h1>
-          Amirreza <span class="light-blue--text text--lighten-3">Nasiri</span>
+          Jonatan <span class="light-blue--text text--lighten-3">García</span>
         </h1>
         <span>
-          A challenge-loving web developer
+          A challenge-loving software engineer
         </span>
       </div>
 
@@ -79,22 +79,12 @@ export default {
             {
               name: 'Email',
               icon: 'mdi-email',
-              text: 'hi@amirreza.in',
-            },
-            {
-              name: 'Website',
-              icon: 'mdi-web',
-              text: 'amirreza.in',
-            },
-            {
-              name: 'Birth Date',
-              icon: 'mdi-cake-variant',
-              text: 'Dec 7, 1996',
+              text: 'jntngf@gmail.com',
             },
             {
               name: 'Habitation',
               icon: 'mdi-map-marker',
-              text: 'Tabriz, Iran',
+              text: 'Canary Islands, Spain',
             },
           ],
         },
@@ -102,24 +92,14 @@ export default {
           title: 'SOCIALS',
           items: [
             {
-              icon: 'mdi-github-circle',
-              text: 'github.com/AmirrezaNasiri',
-              link: 'https://github.com/AmirrezaNasiri',
+              icon: 'mdi-linkedin',
+              text: 'linkedin.com/in/jgarciaferrera',
+              link: 'https://www.linkedin.com/in/jgarciaferrera/',
             },
             {
-              icon: 'mdi-linkedin-box',
-              text: 'linkedin.com/in/amirreza-nasiri',
-              link: 'https://linkedin.com/in/amirreza-nasiri',
-            },
-            {
-              icon: 'mdi-twitter',
-              text: 'twitter.com/Amirreza_Nasiri',
-              link: 'https://twitter.com/Amirreza_Nasiri',
-            },
-            {
-              icon: 'mdi-instagram',
-              text: 'instagram.com/amirreza.n96',
-              link: 'https://instagram.com/amirreza.n96',
+              icon: 'mdi-alpha-m',
+              text: 'medium.com/@jntngf',
+              link: 'https://medium.com/@jntngf',
             },
           ],
         },
@@ -136,10 +116,6 @@ export default {
               text: 'Challenges',
             },
             {
-              icon: 'mdi-bike',
-              text: 'Cycling',
-            },
-            {
               icon: 'mdi-image-filter-hdr',
               text: 'Nature',
             },
@@ -152,8 +128,8 @@ export default {
               text: 'Teaching',
             },
             {
-              icon: 'mdi-karate',
-              text: 'Sports',
+              icon: 'mdi-ski-water',
+              text: 'Kitesurf',
             },
             {
               icon: 'mdi-music',
@@ -168,8 +144,12 @@ export default {
               text: 'Books',
             },
             {
-              icon: 'mdi-android-debug-bridge',
-              text: 'Tickling Bugs!',
+              icon: 'mdi-motorbike',
+              text: 'Z900!',
+            },
+            {
+              icon: 'mdi-swim',
+              text: 'Swimming',
             },
           ],
         },
@@ -177,20 +157,12 @@ export default {
           title: 'LANGUAGES',
           items: [
             {
+              text : 'Spanish',
+              value: 100,
+            },
+            {
               text : 'English',
-              value: 70,
-            },
-            {
-              text : 'Turkish',
-              value: 45,
-            },
-            {
-              text : 'Azeri',
-              value: 100,
-            },
-            {
-              text : 'Persian',
-              value: 100,
+              value: 80,
             },
           ],
         },

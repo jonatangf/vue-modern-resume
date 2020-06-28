@@ -7,11 +7,14 @@
       <content-section
         title="Who am I?"
       >
-        I'm a developer born in Iran and founder of <a href="http://delix.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=delix">Delix.ir</a>, <a href="https://bytegate.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bytegate">Bytegate.ir</a> and <a href="http://bobet.ir/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=bobet">Bobet.ir</a> and co-founder of <a href="https://smo.li/?utm_source=portiflo&utm_medium=link&utm_content=intro&utm_campaign=smoli">Smo.li</a>.<br>
-        I'm interested and skilled in different topics of Information Technology including programming, web development, and computer and network security.
+        I'm an enthusiastic agilist with a strong technical background, who believes in people and teamwork, and the
+        change that these two can bring to society and organizations. As a Company Technical Lead I am used to work in
+        multicultural environments, both collocated and distributed. My key skills include, but are not limited to;
+        participating in high-level project technical definition and planning, transferring ideas into practical action
+        and making sure that all team members understand business goals.
       </content-section>
       <content-section
-        v-if="prouds"
+        v-if="false"
         title="What am I proud of?"
       >
         <v-layout
@@ -106,6 +109,27 @@
           </template>
         </v-layout>
       </content-section>
+      <content-section
+        v-if="certifications"
+      >
+        <v-layout
+          v-for="(certification, i) in certifications"
+          :key="i"
+        >
+          <v-flex md4>
+            {{ certification.from }} - {{ certification.to }}
+          </v-flex>
+          <v-flex md8>
+            <strong v-if="certification.title">{{ certification.title }}</strong>
+            <div v-if="certification.location">
+              <i>{{ certification.location }}</i>
+            </div>
+            <div v-if="certification.description">
+              {{ certification.description }}
+            </div>
+          </v-flex>
+        </v-layout>
+      </content-section>
     </v-card-text>
   </v-card>
 </template>
@@ -140,88 +164,85 @@ export default {
     ],
     educations: [
       {
-        from       : '2015',
-        to         : '2019 (not finished yet)',
-        title      : 'Bachelor\'s degree, Information Technology',
-        location   : 'Seraj University',
-        description: 'Became a member of University Academic Association of Computer Science',
+        from       : '2017',
+        to         : 'present',
+        title      : 'Master\'s Degree in Software Engineering and Computer Systems',
+        location   : 'UNIR',
+        description: '',
+      },
+      {
+        from       : '2008',
+        to         : '2013',
+        title      : 'Degree in Computer Engineering, specialty in Software Engineering',
+        location   : 'Las Palmas de Gran Canaria University',
+        description: '',
       },
     ],
     skills: [
       {
-        title: 'PHP',
-        icon : 'mdi-language-php',
-        value: 95,
+        title: 'Java',
+        icon : 'mdi-language-java',
+        value: 100,
       },
       {
-        title: 'JavaScript',
-        icon : 'mdi-language-javascript',
+        title: 'NodeJS',
+        icon : 'mdi-nodejs',
         value: 80,
       },
       {
-        title: 'Laravel Framework',
-        icon : 'mdi-laravel',
+        title: 'Python',
+        icon : 'mdi-language-python',
         value: 90,
       },
       {
         title: 'Vue.js Framework',
         icon : 'mdi-vuejs',
-        value: 90,
+        value: 60,
+      },
+      {
+        title: 'Android',
+        icon : 'mdi-android',
+        value: '75',
+      },
+      {
+        title: 'RabbitMQ',
+        icon : 'mdi-rabbit',
+        value: 80,
       },
       { divider: true },
       {
-        title: 'Ubuntu Server',
-        icon : 'mdi-ubuntu',
-        value: 70,
-      },
-      {
-        title: 'CentOS Server',
-        icon : 'mdi-linux',
-        value: 47,
-      },
-      {
-        title: 'Web Application Security',
-        icon : 'mdi-shield-lock',
-        value: 80,
-      },
-      {
         title: 'Test Driven Development',
         icon : 'mdi-test-tube',
-        value: 26,
+        value: 70,
       },
       {
         title: 'Continuous Integration / Continuous Delivery',
         icon : 'mdi-truck-fast',
-        value: 35,
+        value: 60,
       },
       {
         title: 'Git',
         icon : 'mdi-git',
-        value: 67,
+        value: 90,
+      },
+      {
+        title: 'Docker',
+        icon : 'mdi-docker',
+        value: 70,
       },
       { divider: true },
       {
-        title: 'Hardware Development',
-        icon : 'mdi-chip',
-        value: 29,
+        title: 'Agile',
+        icon : 'mdi-truck-delivery',
+        value: 90,
       },
-      {
-        title: 'C/C++',
-        icon : 'mdi-language-cpp',
-        value: 38,
-      },
-      { divider: true },
       {
         title: 'Leadership',
         icon : 'mdi-account-group',
         value: 68,
       },
-      {
-        title: 'Content Marketing (+340 articles)',
-        icon : 'mdi-text',
-        value: 96,
-      },
     ],
+    certifications: [],
   }),
 }
 </script>
